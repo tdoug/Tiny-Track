@@ -47,6 +47,7 @@ require('./controllers/passport.js')(passport);
 
 ///routes
 
+///if the user is not logged in, redirect
 app.get('/', isLoggedIn, function(req, res){
   res.redirect('/log');
 });
@@ -86,11 +87,13 @@ app.get('/auth/logout', function(req, res) {
   });
 
 
+///route for entries CRUD
 app.post('/log_entries', log_entries.save, log_entries.del, function(res, req)
 {
     
 });
 
+//route for AJAX creation of results
 app.get('/log_data', function(req,res)
 {
   var yesterday = req.query.food_date - (24 * 60 * 60 * 1000);
@@ -99,6 +102,8 @@ app.get('/log_data', function(req,res)
   console.log(req.user._id);
    schema.log_entry.find({user_id:req.user._id, date:{ $gt:yesterday }}).lean().exec(function (err, this_log_entries)
    {
+
+    ///cycle through results and tabulate totals for each nutrient
     var this_totals = {calories:0, fat:0, carbs:0, protein:0};
     
     Object.keys(this_log_entries).forEach(function(key) {
