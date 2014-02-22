@@ -1,0 +1,23 @@
+doctype html
+html
+	head
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		title= title
+		link(rel='stylesheet', href='/stylesheets/app.css')
+		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+		link(rel='stylesheet', href='/javascripts/pickadate/themes/classic.css')
+		link(rel='stylesheet', href='/javascripts/pickadate/themes/classic.date.css')
+		script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+		script(src="/javascripts/pickadate/picker.js")
+		script(src="/javascripts/pickadate/picker.date.js")
+		script(src="/javascripts/ui.js")
+		script(src="/javascripts/bootstrap.min.js")
+
+	body
+	div.top_nav.navbar.navbar-inverse.navbar-fixed-top
+		div(class='tagline').
+			Tiny Track - For a Tinier You
+		a(href='/log', class='navbar-brand') Your Log		
+		a(href='/auth/logout', class='navbar-brand') Logout
+	div.content_container.container
+		block content

@@ -1,0 +1,24 @@
+table(width='100%', class='data_table')
+	thead
+		th Food Name
+		th Cals
+		th Fat
+		th Carbs
+		th Protein
+	each entry in log_entries
+		tr				
+			td #{entry.name}
+			td #{entry.calories}
+			td #{entry.fat}						
+			td #{entry.carbs}
+			td #{entry.protein}
+			td 
+				button(id="del_food", class="btn btn-danger btn-xs" record_id="#{entry._id}") Delete This
+	tr(class="bottom_row")
+		td
+			strong Totals: 
+		td #{totals.calories}
+		td #{totals.fat}
+		td #{totals.carbs}
+		td #{totals.protein}
+		td

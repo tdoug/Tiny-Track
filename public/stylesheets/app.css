@@ -1,0 +1,150 @@
+body {
+  font-family: 'Freight Sans Bold', 'lucida grande',tahoma,verdana,arial,sans-serif !important;  
+}
+
+div.wrapper
+{
+  width: 100%;
+  min-height: 100%;
+}
+
+a 
+{
+  color: #00b7ff;
+}
+
+legend
+{
+  border-bottom: 0 !important;
+}
+
+.top_nav a{ color: white; }
+
+/* login form */
+ .main {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .login-or {
+    position: relative;
+    font-size: 18px;
+    color: #aaa;
+    margin-top: 10px;
+            margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .span-or {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -2px;
+    margin-left: -25px;
+    background-color: #fff;
+    width: 50px;
+    text-align: center;
+  }
+  .hr-or {
+    background-color: #cdcdcd;
+    height: 1px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  h3 {
+    text-align: center;
+    line-height: 300%;
+  }
+
+/* end login form */
+
+/* register form */
+body{
+  background-color: #525252;
+}
+.centered-form{
+ 
+}
+
+.centered-form .panel{
+  /*
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+  */
+}
+/* end register form */
+
+fieldset
+{
+  
+}
+
+div.content_container
+{
+	padding:10px;	
+	border:1px solid;
+	border-color:white;
+	background-color: white;
+
+  position: relative;
+}
+
+.tagline
+{
+  float:right;
+  color:white;
+  font-size:12pt;
+  padding-right:10px;
+  line-height: 50px;
+}
+
+div.top_nav
+{
+  position: relative;
+  padding:10px 0;
+}
+
+.food_log_entry input
+{
+  width:100%;
+}
+
+p.heading
+{
+  position: relative;
+  padding:10px;
+  font-weight:bold;
+}
+
+#hidden_datepicker
+{
+  display: none;
+}
+
+#start_date
+{
+  font-weight:bold;
+}
+
+div#food_data td
+{
+  padding:5px;
+}
+
+div#food_data tr.bottom_row
+{
+  border-top:1px dotted;
+  border-color:gray;
+}
+
+@media (max-width: 767px) { 
+  .tagline
+  {
+    display: none;
+  }
+
+  .data_table
+  {
+    font-size:8pt;
+  }
+}
+

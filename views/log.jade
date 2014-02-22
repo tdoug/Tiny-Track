@@ -1,0 +1,29 @@
+extends layout
+block content
+	div.row
+	div.food_log_entry.col-md-4
+			form#food_log_entry_form(action='/log_entries', method='post' )
+				fieldset
+					legend 
+						| Food Entry for  
+						button(id="datepick",type="button", class="btn btn-success dropdown-toggle") #{start_date} <span class="caret"></span>
+					input(name='food_date', type='hidden', value='#{timestamp}')
+					input(id='hidden_datepicker',name='hidden_datepicker', type='text')
+					div.form-group
+						input(name='food_name', placeholder='Name of Food', class='input-lg')
+					div.form-group
+						input(name='food_cal', placeholder='Calories', class='input-lg')
+					div.form-group				
+						input(name='food_fat', placeholder='Fat', class='input-lg')
+					div.form-group			
+						input(name='food_carb', placeholder='Carbs', class='input-lg')
+					div.form-group				
+						input(name='food_protein', placeholder='Protein', class='input-lg')
+					div.form-group
+						input(type='hidden', value='save_log_entry', name='op')
+						input.button(type='submit',value='Save', class='btn btn-success')
+				div.food_log_calendar_nav
+		div.col-md-8
+			h3(class='log_header') #{start_date}
+			div#food_data
+	div(style='clear:both')
