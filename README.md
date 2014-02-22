@@ -13,5 +13,6 @@ My TODO
 * Create an autocomplete for previously entered food names, with data completion.
 * Create a graph to show calorie consumption over time.
 * Add exercise and weight trackers.
+* Add connect-flash messages for login process
 
-I hope this provides a nice, simple app to use as an example basis for a starting Node.js programmer or a starting point for someone inspired to create a dieting app of some sort.
+I hope this provides a nice, simple app to use as an example basis for new Node.js programmers or a starting point for someone inspired to create a dieting app of some kind.
