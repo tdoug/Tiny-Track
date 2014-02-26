@@ -2,6 +2,7 @@
   "name": "TinyTrack",
   "version": "1.0.0",
   "private": true,
+  "author": "Tom Douglas <tom@fluidcreations.net>",
   "scripts": {
     "start": "nodemon app.js"
   },
