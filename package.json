@@ -1,6 +1,6 @@
 {
-  "name": "Tiny Track",
-  "version": "1.0",
+  "name": "TinyTrack",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "nodemon app.js"
